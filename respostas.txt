@@ -1,7 +1,6 @@
 Parte II. Questões Dissertativas
 
 5. Explique a diferença entre o modelo monolítico e o modelo Frontend + Backend via API. Cite um exemplo de tecnologia para cada modelo.
-
 O modelo monolítico é uma arquitetura de software onde todas as funcionalidades de um aplicativo estão integradas em um único código-fonte. Isso significa que o frontend (interface do usuário) e o backend (lógica de negócios e acesso a dados) estão acoplados, o que pode tornar a manutenção e a escalabilidade mais difíceis. Um exemplo de tecnologia para o modelo monolítico é o framework Ruby on Rails, onde tanto o frontend quanto o backend são desenvolvidos juntos.
 O modelo Frontend + Backend via API, por outro lado, é uma arquitetura onde o frontend e o backend são separados e se comunicam por meio de APIs (Application Programming Interfaces). Isso permite que cada parte seja desenvolvida, mantida e escalada de forma independente. O frontend pode ser desenvolvido usando tecnologias como React ou Angular, enquanto o backend pode ser implementado usando Node.js, Django ou qualquer outra tecnologia que suporte a criação de APIs RESTful ou GraphQL. Essa abordagem oferece maior flexibilidade e facilita a integração com outros serviços.
 
