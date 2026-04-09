@@ -1,0 +1,48 @@
+Parte II. Questões Dissertativas
+
+5. Explique a diferença entre o modelo monolítico e o modelo Frontend + Backend via API. Cite um exemplo de tecnologia para cada modelo.
+
+O modelo monolítico é uma arquitetura de software onde todas as funcionalidades de um aplicativo estão integradas em um único código-fonte. Isso significa que o frontend (interface do usuário) e o backend (lógica de negócios e acesso a dados) estão acoplados, o que pode tornar a manutenção e a escalabilidade mais difíceis. Um exemplo de tecnologia para o modelo monolítico é o framework Ruby on Rails, onde tanto o frontend quanto o backend são desenvolvidos juntos.
+O modelo Frontend + Backend via API, por outro lado, é uma arquitetura onde o frontend e o backend são separados e se comunicam por meio de APIs (Application Programming Interfaces). Isso permite que cada parte seja desenvolvida, mantida e escalada de forma independente. O frontend pode ser desenvolvido usando tecnologias como React ou Angular, enquanto o backend pode ser implementado usando Node.js, Django ou qualquer outra tecnologia que suporte a criação de APIs RESTful ou GraphQL. Essa abordagem oferece maior flexibilidade e facilita a integração com outros serviços.
+
+6. O que é o DOM (Document Object Model )? Qual é a relação entre o HTML escrito pelo desenvolvedor e o DOM criado pelo navegador?
+O DOM (Document Object Model) é uma representação em árvore de um documento HTML ou XML que é criada pelo navegador quando uma página web é carregada. Ele permite que os desenvolvedores acessem e manipulem a estrutura, o estilo e o conteúdo de uma página web usando linguagens de programação como JavaScript. O HTML escrito pelo desenvolvedor é interpretado pelo navegador para construir o DOM, que é uma estrutura de dados que representa os elementos da página, suas propriedades e suas relações hierárquicas. O DOM é essencial para a interatividade e a dinâmica das páginas web, permitindo que os desenvolvedores modifiquem o conteúdo e o layout da página em tempo real.
+
+7. Explique o que é o Box Model do CSS, descrevendo cada uma das quatro camadas: content, padding, border e margin. Qual a diferença prática entre padding e margin?
+O Box Model do CSS é um conceito fundamental que descreve a estrutura de um elemento HTML em termos de quatro camadas: content, padding, border e margin.
+- Content: Esta é a camada central do box, onde o conteúdo real do elemento é exibado, como texto, imagens ou outros elementos.
+- Padding: Esta camada envolve o conteúdo e é usada para criar espaço entre o conteúdo e a borda do elemento. O padding é parte do elemento e pode ser estilizado com cor de fundo, por exemplo.
+- Border: Esta camada envolve o padding e é a borda visível do elemento. A borda pode ser estilizada com diferentes larguras, estilos e cores.
+- Margin: Esta é a camada mais externa do box e é usada para criar espaço entre o elemento e outros elementos ao seu redor. A margem é transparente e não faz parte do elemento, ou seja, não pode ser estilizada com cor de fundo.
+A diferença prática entre padding e margin é que o padding é parte do elemento e afeta o tamanho total do elemento, enquanto a margin é um espaço externo que separa o elemento de outros elementos, sem afetar o tamanho do elemento em si. O padding aumenta o espaço dentro do elemento, enquanto a margin aumenta o espaço fora do elemento.
+
+8. O que é o Bootstrap? Por que usar Bootstrap em vez de escrever todo o CSS manualmente? Cite dois componentes ou classes do Bootstrap que você conhece e descreva para que servem.
+O Bootstrap é um framework de código aberto para desenvolvimento de interfaces web responsivas e móveis. Ele fornece uma coleção de ferramentas, estilos e componentes pré-construídos que facilitam a criação de sites e aplicativos web com um design consistente e moderno. O Bootstrap é baseado em HTML, CSS e JavaScript, e é amplamente utilizado por desenvolvedores para acelerar o processo de desenvolvimento e garantir que as interfaces sejam compatíveis com diferentes dispositivos e navegadores.
+Usar o Bootstrap em vez de escrever todo o CSS manualmente oferece várias vantagens, como:
+- Rapidez: O Bootstrap fornece uma base sólida de estilos e componentes, permitindo que os desenvolvedores criem interfaces rapidamente sem precisar escrever CSS do zero.
+- Consistência: O Bootstrap garante que os elementos da interface tenham um design consistente, o que é especialmente útil para equipes de desenvolvimento que trabalham em projetos grandes.
+- Responsividade: O Bootstrap é projetado para ser responsivo, o que significa que os sites criados com ele se adaptam automaticamente a diferentes tamanhos de tela, proporcionando uma experiência de usuário otimizada em dispositivos móveis e desktops.
+Dois componentes ou classes do Bootstrap que conheço são:
+- .container: Esta classe é usada para criar um contêiner responsivo que centraliza o conteúdo da página e aplica margens horizontais automáticas. Ela é frequentemente usada para envolver o conteúdo principal de uma página e garantir que ele seja exibido corretamente em diferentes dispositivos.
+- .btn: Esta classe é usada para estilizar botões. O Bootstrap oferece várias variações de botões, como .btn-primary, .btn-secondary, .btn-success, entre outros, que aplicam diferentes estilos e cores aos botões, facilitando a criação de interfaces atraentes e funcionais.
+
+9. Qual a diferença entre os seletores por elemento, por classe e por ID no CSS? Dê um exemplo de sintaxe para cada um e explique qual tem maior especificidade (prioridade) sobre os outros.
+Os seletores por elemento, por classe e por ID são formas diferentes de selecionar elementos HTML para aplicar estilos CSS. A diferença entre eles está na forma como identificam os elementos e na especificidade que possuem.
+- Seletor por elemento: Este seletor seleciona todos os elementos de um determinado tipo. Por exemplo, para selecionar todos os parágrafos em um documento HTML, a sintaxe seria:
+```cssp {
+    color: blue;
+}
+```Neste exemplo, todos os elementos `<p>` terão o texto colorido de azul.
+- Seletor por classe: Este seletor seleciona elementos que possuem uma classe específica. A sintaxe para selecionar elementos com a classe "highlight" seria:
+```css.highlight {
+    background-color: yellow;
+}```Neste exemplo, todos os elementos com a classe "highlight" terão um fundo amarelo.
+- Seletor por ID: Este seletor seleciona um elemento específico que possui um ID único. A sintaxe para selecionar um elemento com o ID "header" seria:
+```css#header {
+    font-size: 24px;
+}```Neste exemplo, o elemento com o ID "header" terá um tamanho de fonte de 24 pixels.
+Em termos de especificidade, o seletor por ID tem a maior prioridade,seguido pelo seletor por classe e, por último, o seletor por elemento. Isso significa que se houver conflitos entre estilos aplicados a um elemento, o estilo definido por um seletor de ID prevalecerá sobre os estilos definidos por seletores de classe ou de elemento. Por exemplo,se um elemento tiver um estilo definido por um seletor de ID e outro estilo definido por um seletor de classe, o estilo do seletor de ID será aplicado, mesmo que o seletor de classe também esteja presente.
+
+10. Qual é a diferença entre usar HTML semântico(com tags como <header>, <nav>, <main>, <footer>) e usar apenas <div> para estruturar uma página? Quais benefícios o HTML semântico traz para SEO e acessibilidade?
+O HTML semântico é uma abordagem de codificação que utiliza tags específicas para descrever a estrutura e o significado do conteúdo em uma página web. Tags como `<header>`, `<nav>`, `<main>`, e `<footer>` são exemplos de elementos semânticos que indicam claramente a função de cada seção da página. Por outro lado, usar apenas `<div>` para estruturar uma página é uma abordagem não semântica, onde todas as seções são representadas por elementos genéricos, sem indicar seu propósito ou significado.
+A diferença entre usar HTML semântico e usar apenas `<div>` é que o HTML semântico melhora a legibilidade do código, facilita a manutenção e torna o conteúdo mais compreensível para os navegadores, mecanismos de busca e tecnologias assistivas. O HTML semântico ajuda a organizar o conteúdo de forma lógica, permitindo que os mecanismos de busca entendam melhor a estrutura da página e o significado do conteúdo, o que pode melhorar o SEO (Search Engine Optimization). Além disso, o HTML semântico é crucial para a acessibilidade, pois permite que tecnologias assistivas, como leitores de tela,interpretem corretamente a estrutura da página e forneçam uma experiência de navegação mais intuitiva para usuários com deficiências. Por exemplo, um leitor de tela pode identificar a seção de navegação usando a tag `<nav>` e fornecer uma maneira de pular diretamente para essa seção, melhorando ausabilidade para pessoas com deficiência visual.

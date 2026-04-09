@@ -1,0 +1,1 @@
+$(document).ready(function() {#btn-detalhes').click(function() {
